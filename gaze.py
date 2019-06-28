@@ -21,12 +21,7 @@ filepath = 'points' + formatted_time + '.txt'
 gaze = EyeTracking()
 webcam = cv2.VideoCapture(0)
 
-#x_cord = []
-#y_cord = []
-#x_cord.append(0)
 
-######
-#resolution = Screen.PrimaryScreen.Bounds
 '''app = wx.App(False)
 width, height = wx.GetDisplaySize()
 
@@ -45,7 +40,7 @@ while True:
     # We get a new frame from the webcam
     _, frame = webcam.read()
 
-    # We send this frame to GazeTracking to analyze it
+    # We send this frame to EyeTracking to analyze it
     gaze.refresh(frame)
 
     frame = gaze.annotated_frame()
@@ -80,8 +75,7 @@ while True:
     #if x_mid is not None:
     #fh.write('{} {} {} {}\n'.format(x_mid, y_mid, realX, realY))
             fh.write('{} {}\n'.format(x_mid, y_mid))
-#print ("lenx" + str(len(x_cord))+ '\n')
-#print ("leny" + str(len(y_cord)) + '\n')
+
 
     cv2.putText(frame, "Left pupil:  " + str(left_pupil), (90, 130), cv2.FONT_HERSHEY_DUPLEX, 0.9, (147, 58, 31), 1)
     cv2.putText(frame, "Right pupil: " + str(right_pupil), (90, 165), cv2.FONT_HERSHEY_DUPLEX, 0.9, (147, 58, 31), 1)
