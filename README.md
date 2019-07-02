@@ -2,8 +2,20 @@
 
 Installation: 
 
-Clone this project : git clone https://github.com/aditi15ashley/EyeTrace.git
+Clone this project :
 
-Install these dependencies : pip install -r requirement.txt 
+```
+git clone https://github.com/aditi15ashley/EyeTrace.git
+```
 
-Run the demo : python gaze.py 
+Install these dependencies : 
+
+```
+pip install -r requirement.txt 
+```
+
+Run the demo :
+
+```
+python gaze.py 
+```
