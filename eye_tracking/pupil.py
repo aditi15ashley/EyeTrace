@@ -30,7 +30,9 @@ class Pupil(object):
         kernel = np.ones((3, 3), np.uint8)
         new_frame = cv2.bilateralFilter(eye_frame, 10, 15, 15)
         new_frame = cv2.erode(new_frame, kernel, iterations=3)
-        new_frame = cv2.threshold(new_frame, 50, 255, cv2.THRESH_BINARY)[1]
+
+        new_frame = cv2.threshold(new_frame, 50, 255, cv2.THRESH_BINARY)[1]#can replace 'threshold'(without quotes) instead of threshold for using the threshold found from calibration
+        #can also try out other values to see which value detects the pupils best                                  
 
         return new_frame
 
