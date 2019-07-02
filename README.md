@@ -15,6 +15,9 @@ git clone https://github.com/aditi15ashley/EyeTrace.git
 ```
 pip install -r requirement.txt 
 ```
+> The Dlib library has four primary prerequisites: Boost, Boost.Python, CMake and X11/XQuartx. If you doesn't have them, you can read this article to know how to easily install them : https://www.pyimagesearch.com/2017/03/27/how-to-install-dlib/
+
+> OpenCV 4 is not supported yet, make sure to install version 3.4
 
 ### **Run the demo :**
 
