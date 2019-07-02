@@ -32,9 +32,9 @@ This library is used as a face detector to detect faces and get facial landmarks
 
 Now to use these pupil coordinates to get our gaze on the screen, we use the 9-point calibration system. 
 
-To do this, we make a calibration page on the server with 9 buttons. Whenever a user clicks on these buttons we store the screen coordinates of where the user clicks and and the same time store the coordinates of our pupils in the webcam frame.
+To do this, we make a calibration page on the server with 9 buttons. Whenever a user clicks on these buttons we store the screen coordinates of where the user clicks and at the same time store the coordinates of our pupils in the webcam frame.
 
-We try to obtain a function mapping the screen coordinates to pupil coordinates in webcam-frame in `9point.py`. This function is used to obtain the screen coordinates for our real-time pupil detection while looking at the screen and hence is used to produce our eye-trace in `9pointoutput.py`. 
+We try to obtain a function mapping the screen coordinates to pupil coordinates in webcam frame in `9point.py`. This function is used to obtain the screen coordinates for our real-time pupil detection while looking at the screen and hence is used to produce our eye-trace in `9pointoutput.py`. 
 
 Calibration would be more accurate if we click on each of the 9 buttons 4-5 times, and even better if we use a 25-point calibration system. Our results would of course be more accurate if we don't move our head much from the postion it was during calibration while actual gaze-detection. 
 
