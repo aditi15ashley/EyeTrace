@@ -36,7 +36,7 @@ To do this, we make a calibration page on the server with 9 buttons. Whenever a 
 
 We try to obtain a function mapping the screen coordinates to pupil coordinates in webcam frame in `9point.py`. This function is used to obtain the screen coordinates for our real-time pupil detection while looking at the screen and hence is used to produce our eye-trace in `9pointoutput.py`. 
 
-Calibration would be more accurate if we click on each of the 9 buttons 4-5 times, and even better if we use a 25-point calibration system. Our results would of course be more accurate if we don't move our head much from the postion it was during calibration while actual gaze-detection. 
+Calibration would be more accurate if we click on each of the 9 buttons 4-5 times, and even better if we use a 25-point calibration system. Our results would of course be more accurate if we don't move our head much from the position it was during calibration while actual gaze-detection. 
 
 The back-end of the server has been implemented in Flask in `server.py`.
 
